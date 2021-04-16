@@ -1,0 +1,796 @@
+/*INICIA MAIN CSS*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* INICIA VARIABLES */
+:root {
+    --fuente1: 'Dela Gothic One', cursive;
+    --fuente2: 'Lexend', sans-serif;
+    --azul: rgb(21, 0, 99);
+    --blanco: rgb(255, 255, 255);
+    --celeste: rgb(0, 255, 242);
+    --pastel: rgb(138, 201, 226);
+    --negro: rgb(0, 0, 0);
+    --gris: rgb(206, 206, 206);
+}
+/* FIN VARIABLES */
+
+/*-------------------------------------------------------------*/
+
+/* INICIA BOTÓN ARRIBA */
+.ir-arriba {
+    display: none;
+    padding: 20px;
+    background-color: var(--azul);
+    font-size: 20px;
+    color: var(--blanco);
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/* FIN BOTÓN ARRIBA */
+
+/*-------------------------------------------------------------*/
+
+/* INICIA HEADER */
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--azul);;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title{
+    font-size: 50px;
+    margin: 15px;
+    color: var(--blanco);
+    font-family: var(--fuente1);
+}
+
+.header__menu{
+    list-style: none;
+    display: flex;
+}
+
+.header__menu__container {
+    margin-right: 20px;
+}
+
+.header__menu li {
+    margin: 15px;
+}
+
+.header__menu a {
+    color: var(--celeste);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: var(--fuente2);
+}
+
+.header__menu a:hover {
+    color: var(--blanco);
+    transition: 400ms;
+}
+/*  FIN HEADER */
+
+/*-------------------------------------------------------------*/
+
+/* INICIA INDEX */
+.main {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+.figure img {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 575px;
+    width: 575px;
+    height: 500px;
+}
+
+.main__title {
+    color: var(--azul);
+    font-size: 70px;
+    font-family: var(--fuente1);
+    margin-top: 170px;
+    text-align: center;
+}
+
+.main__container h2 {
+    color: var(--negro);
+    font-size: 50px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main__container p {
+    color: var(--azul);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 0px;
+    text-align: justify;
+    width: 700px;
+}
+
+.main__container button {
+    background-color: var(--azul);
+    width: 300px;
+    margin-left: 70px;
+    margin-top: 70px;
+    border: 0px;
+    border-radius: 50px;
+    height: 55px;
+    cursor: pointer;
+    outline: none;
+}
+
+.main__container button a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 25px;
+    font-family: var(--fuente2);
+}
+
+.main__button:hover {
+    background-color: var(--blanco);
+    width:  350px;
+    margin-left: 50px;
+    transition: 500ms;
+}
+
+.main__button a:hover {
+    color: var(--azul);
+}
+
+.main__h4 {
+    color: var(--negro);
+    font-size: 18px;
+    font-family: var(--fuente2);
+    margin-top: 15px;
+    text-align: center;
+    bottom: 0;
+}
+/* FIN INDEX */
+
+/*-------------------------------------------------------------*/
+
+/* INICIO PAGINA SINTOMAS */
+.main__blog {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 1075px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__blog h1{
+    text-align: center;
+    font-family: var(--fuente1);
+    font-size: 70px;
+    color: var(--azul);
+    margin-top: 10px;
+}
+
+.main__container__blog h2 {
+    color: var(--negro);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__container__blog ul {
+    color: var(--azul);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+/*SLIDER*/
+.container-slider {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px var(--azul),
+                0 15px 50px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--pastel);
+    top: 215%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--fuente2);
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background: var(--celeste);    
+}
+
+.slider__btn--left {
+    left: 150px;
+}
+
+.slider__btn--right {
+    right: 150px;
+}
+/* FIN SLIDER*/
+/* FIN PAGINA SINTOMAS*/
+
+/*-------------------------------------------------------------*/
+
+/*INICIA PAGINA CAUSAS*/
+.main__causas {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 975px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title__causas {
+    color: var(--azul);
+    font-size: 70px;
+    font-family: var(--fuente1);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main__container__causas h2 {
+    color: var(--azul);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main__container__causas h3 {
+    color: var(--negro);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 75px;
+    text-align: left;
+}
+
+.contenido {
+    color: var(--negro);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__container__causas ul {
+    color: var(--negro);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+
+.figure__c img{
+    margin-left: 375px; /*espacio hacia la izquierda*/
+    margin-right: 0%; /*espacio hacia la derecha*/
+    width: 600px; /*ancho*/
+    height: 350px; /*altura*/
+    display: flex; /*orden*/
+    justify-content: center; /*alineación*/
+    margin-top: 0px; /*espacio de arriba a abajo*/
+    border-radius: 575px; /*curva del borde*/
+}
+
+.main__causas2 {
+    background-color: var(--blanco);
+    width: 100%;
+    height: 625px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__causas3 {
+    background-color: var(--gris);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+/*FIN PAGINA CAUSAS*/
+
+/*-------------------------------------------------------------*/
+
+/* INICIA PRECAUCIONES */
+.main__preca {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 775px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container__preca h1{
+    text-align: center;
+    font-family: var(--fuente1);
+    font-size: 70px;
+    color: var(--azul);
+    margin-top: 10px;
+}
+
+.main__container__preca h2 {
+    color: var(--negro);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__container__preca ul {
+    color: var(--azul);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.precaucionesimg {
+    background-color: var(--gris);
+    width: 100%;
+    height: 925px;
+    display: flex;
+    justify-content: center;
+}
+
+.precaucionesimg p{
+    font-family: var(--fuente2);
+    color: var(--negro);
+    text-align: center;
+    font-size: 22px;
+}
+
+.precaucionesimg img {
+    margin-left: 7%; /*espacio hacia la izquierda*/
+    margin-right: 0%; /*espacio hacia la derecha*/
+    width: 625px; /*ancho*/
+    height: 350px; /*altura*/
+    display: flex; /*orden*/
+    justify-content: center; /*alineación*/
+    margin-top: 0px; /*espacio de arriba a abajo*/
+    border-radius: 25px; /*curva del borde*/
+    box-shadow: 0 0 0 2px var(--gris),
+                0 5px 25px;
+}
+/* FIN PRECAUCIONES */
+
+/*-------------------------------------------------------------*/
+
+/* PAGINA TRATAMIENTO*/
+.main_tratamiento1 {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 810px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title__tratamiento1 {
+    color: var(--azul);
+    font-size: 70px;
+    font-family: var(--fuente1);
+    margin-top: 25px;
+    text-align: center;
+}
+
+.main__container__tratamiento1 h2 {
+    color: var(--negro);
+    font-size: 35px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contenidot {
+    color: var(--negro);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: justify;
+}
+
+.main__container__tratamiento1 h3 {
+    color: var(--negro);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__container__tratamiento1 ul {
+    color: var(--azul);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__tratamiento2 {
+    background-color: var(--blanco);
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title__tratamiento2 {
+    color: var(--azul);
+    font-size: 70px;
+    font-family: var(--fuente1);
+    margin-top: 25px;
+    text-align: center;
+}
+
+.main__container__tratamiento2 h2 {
+    color: var(--negro);
+    font-size: 35px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main__container__tratamiento2 h3 {
+    color: var(--negro);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__container__tratamiento2 ul {
+    color: var(--azul);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.portafoliotratamiento{
+    background-color: rgb(150, 150, 150);
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 30%;
+    margin-bottom: 10%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 var(--negro);
+}
+
+.hover-galeria{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* transform: scale(0); */
+    background: var(--azul);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 225px;
+}
+
+.hover-galeria p {
+    color: var(--blanco);
+    font-family: var(--fuente2);
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(0);
+}
+
+.main__tratamiento3 h4 {
+    color: var(--negro);
+    font-size: 15px;
+    font-family: var(--fuente2);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.main__container__b1 button {
+    background-color: var(--azul);
+    width: 250px; /*ancho*/
+    margin-top: 15px; /*espacio de arriba a abajo*/
+    margin-left: 20%;
+    border: 0px; /*borde*/
+    border-radius: 50px; /*curva del borde*/
+    height: 55px; /*largo*/
+    cursor: pointer; /*modo de cursor*/
+    outline: none; /*linea de borde*/ 
+}
+
+.main__container__b1 button a {
+    text-decoration: none; /*subrayado o algo más*/
+    color: var(--blanco); /*color*/
+    font-size: 25px; /*tamaño de la letra*/
+    font-family: var(--fuente2); /*tipo de letra*/
+}
+
+.main__buttonb1:hover {
+    background-color: var(--pastel); /*color de fondo nuevo*/
+    width:  250px; /*ancho nuevo*/
+    margin-left: 20%;
+    transition: 500ms;
+}
+
+.main__buttonb1 a:hover {
+    color: var(--azul); /*nuevo color*/
+}
+/* FIN PAGINA TRATAMIENTO */
+
+/*-------------------------------------------------------------*/
+
+/* INICIA CEPAS*/
+.main__cepas {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 1250px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title__cepas {
+    color: var(--azul);
+    font-size: 70px;
+    font-family: var(--fuente1);
+    margin-top: 15px;
+    text-align: center;
+}
+
+.main__container__cepas h2 {
+    color: var(--negro);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 75px;
+    text-align: left;
+}
+
+.contenido__cepas {
+    color: var(--negro);
+    font-size: 22px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.main__container__cepas ul {
+    color: var(--azul);
+    font-size: 23px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.cepas img {
+    margin-left: 375px; /*espacio hacia la izquierda*/
+    margin-right: 0%; /*espacio hacia la derecha*/
+    width: 600px; /*ancho*/
+    height: 350px; /*altura*/
+    display: flex; /*orden*/
+    justify-content: center; /*alineación*/
+    margin-top: 0px; /*espacio de arriba a abajo*/
+    border-radius: 25px; /*curva del borde*/
+}
+/* FIN CEPAS */
+
+/*-------------------------------------------------------------*/
+
+/* INICIA PAGINA VACUNACIÓN*/
+.main__vacunas1 {
+    background-color: var(--pastel);
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title__vacunas1 {
+    color: var(--azul);
+    font-size: 70px;
+    font-family: var(--fuente1);
+    margin-top: 25px;
+    text-align: center;
+}
+
+.main___title1 {
+    background-color: var(--blanco);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+}
+
+.title__aprobada h2 {
+    color: var(--negro);
+    font-size: 35px;
+    font-family: var(--fuente2);
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+.portafoliovacunas {
+    background-color: var(--blanco);
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: left;
+}
+
+.imgvacunas1 {
+    margin-left: 25px;
+    margin-right: 20px;
+    width: 350px;
+    margin-bottom: 10%;
+    height: 230px;
+    box-shadow: 0 0 6px 0 var(--negro);
+}
+
+.imagenesvacunas h5 {
+    margin-left: 25px;
+    margin-right: 15%;
+    color: var(--azul);
+    font-family: var(--fuente2);
+    text-align: center;
+    font-size: 22px;
+}
+
+.imagenesvacunas ul {
+    margin-left: 20px;
+    margin-right: 10%;
+    color: var(--azul);
+    font-family: var(--fuente2);
+    text-align: left;
+    font-size: 22px;
+}
+
+.main___title2 {
+    background-color: var(--gris);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+}
+
+.title__revisada h2 {
+    color: var(--negro);
+    font-size: 35px;
+    font-family: var(--fuente2);
+    margin-top: 25px;
+    margin-left: 500px;
+}
+
+.portafoliovacunas2 {
+    background-color: var(--gris);
+    width: 100%;
+    height: 538px;
+    display: flex;
+    justify-content: left;
+}
+
+.imgvacunas2 {
+    margin-left: 100px;
+    margin-right: 0%;
+    width: 350px;
+    margin-bottom: 10%;
+    height: 230px;
+    box-shadow: 0 0 6px 0 var(--negro);
+}
+
+.imagenesvacunas2 h4 {
+    margin-left: 75px;
+    margin-right: 35%;
+    color: var(--azul);
+    font-family: var(--fuente2);
+    text-align: center;
+    font-size: 22px;
+}
+
+.imagenesvacunas2 h5 {
+    margin-left: 75px;
+    margin-right: 20%;
+    color: var(--azul);
+    font-family: var(--fuente2);
+    text-align: center;
+    font-size: 22px;
+}
+
+.imagenesvacunas2 ul {
+    margin-left: 80px;
+    margin-right: 10%;
+    color: var(--azul);
+    font-family: var(--fuente2);
+    text-align: left;
+    font-size: 22px;
+}
+/* FIN PAGINA VACUNACIÓN*/
+/* FIN DEL MAIN CSS */
